@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+*{
+    margin:0px;
+    padding: 0px;
+    font-family:"Poppins";
+    box-sizing: border-box;
+}
+
+body{
+    height:100vh;
+}
+.container{
+    display: flex;
+    align-items: center;
+}
+.weather-input{
+    width: 40%;
+    position: fixed;
+    inset: 0;
+    background: #78c1f3;
+    padding: 1rem 2.5rem;
+}
+.weatherIcon{
+    background-position: 50% !important;
+    background-repeat: no-repeat !important;
+    background-size:contain;
+    display: block;
+    height:25%;
+    margin:2rem auto
+
+}
+.input-group {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.input-group input {
+    background: #f8f8f8;
+    text-transform: capitalize;
+    padding: 1rem;
+    font-size: 15px;
+    border-radius: 6px;
+    width: 100%;
+    outline: none;
+    border: none;
+}
+.input-group .converter{
+    position: absolute;
+    right: 45px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+.input-group .fa-search{
+    position: absolute;
+    right: 15px;
+    color:#909090;
+    cursor: pointer;
+    font-size: 22px;
+}
+
+.weather-output{
+    width: 75%;
+    position: fixed;
+    inset: 0;
+    margin-left: 40%;
+    padding: 2rem;
+    background: #f6f6f6;
+    overflow: auto;
+
+}
+.weather-input .feelslike,
+.weather-input .description,
+.weather-input .date,
+.weather-input .city{
+    padding:10px 0px; 
+}
+.temperature{
+    font-size:5ren;
+    text-align: center;
+    display: flex;
+    font-weight: 300;
+}
+.highlight {
+    display: grid;
+    grid-template-columns: repeat(3,250px);
+    grid-template-rows: repeat(2,150px);
+    
+    gap: 12px;
+    margin-top: 15px;
+}
+
+
+.highlight > div {
+    background:  #78c1f3;
+    width: 150px;
+    border-radius: 15px;
+    padding: 8px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    min-height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.highlight i {
+    font-size: 2rem;
+    margin-top: 8px;
+    margin-bottom: 5px;
+    color: black;
+     align-items: center;
+}
+
+
+.sun {
+    display: grid;
+    flex-direction: column;
+    gap: 4px;
+    background: #f0f8ff;
+    border-radius: 15px;
+    padding: 8px;
+    align-items: center;
+}
+
+.sun span {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sun p {
+    margin: 0;
+    font-size: 0.60rem;
+    text-align: center;
+}
+.highlight h1 {
+    margin: 0;
+    font-size: 1.3rem;
+}
+
+.forecast {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.forecast-day {
+    background: #78c1f3;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    width: 100px;
+}
+
+.forecast-day img {
+    width: 50px;
+    height: 50px;
+}
